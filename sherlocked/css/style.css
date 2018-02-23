@@ -1,0 +1,313 @@
+@font-face {
+  font-family:'pirulen';
+  font-weight:normal;
+  font-style:normal;
+
+  src:url('../fonts/pirulenrg.ttf');
+  src:url('../fonts/pirulenrg.ttf') format('embedded-opentype'),url('../fonts/pirulenrg.ttf') format('woff'),url('../fonts/pirulenrg.ttf') format('truetype'),url('../fonts/pirulenrg.ttf') format('svg');
+}
+
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    /*margin-bottom: 10px;*/
+    margin-right: 5px;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    /*margin-bottom: 10px;*/
+}
+
+select {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-right: 5px;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+}
+
+input::-moz-placeholder {
+    opacity: 1;
+    color: white;
+}
+
+a {
+    color: white;
+    text-shadow: 0 0 3px white;
+    transition: all 0.3s;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
+.login-view {
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 3px white;
+}
+
+.signup-view {
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 3px white;
+}
+
+.mynav {
+    background-color: black;
+    /*position: fixed;
+    top: 0;
+    left: 0;*/
+    width: 100%;
+    z-index: 100;
+    /*margin-bottom: 50px;*/
+}
+
+.sherlocked_nav_left_text {
+    text-transform: capitalize;
+    font-family: pirulen;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0 0 3px #ffffff;
+
+}
+
+.login-form-outer-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: inherit;
+}
+
+/*.login-form-wrapper {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.signup-form-wrapper {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 5px;
+}*/
+
+.nav-right-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    text-transform: capitalize;
+    font-family: orbitron;
+    font-size: 18px;
+    color: white;
+}
+
+.signup-form-wrapper {
+    width: 70%;
+}
+
+.login-form-wrapper {
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    .sherlocked_nav_left_text {
+        font-size: 28px;
+    }
+    .nav-left-column {
+        text-align: center;
+    }
+    .nav-right-column {
+        text-align: center;
+    }
+    .nav-right-text {
+        justify-content: center;
+    }
+    body {
+        overflow-y: scroll;
+    }
+    .login-form-wrapper {
+        width: 100%;
+    }
+    .signup-form-wrapper {
+        width: 100%;
+    }
+    hr {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    .form-group {
+        margin-bottom: 10px !important;
+    }
+    .login-form-outer-wrapper {
+        align-items: flex-start !important;
+    }
+    #answer {
+        margin-bottom: 10px;
+    }
+}
+
+.sherlocked_nav_right_text {
+    text-transform: capitalize;
+    font-family: orbitron;
+    font-size: 18px;
+    color: white;
+}
+
+.sherlocked_login_page_right_image {
+    height: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+}
+
+.username {
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.username:hover {
+    text-shadow: 0 0 5px white;
+}
+
+.nav-leaderboard {
+    cursor: pointer;
+    text-shadow: 0 0 3px white;
+    transition: all 0.2s;
+}
+
+.nav-leaderboard:hover {
+    text-shadow: 0 0 5px white;
+}
+
+.username-slide {
+    position: absolute;
+}
+
+.username-slide-ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+}
+
+.level-top-hint {
+    margin-bottom: 20px;
+    color: white;
+    font-family: orbitron;
+}
+
+.close {
+    color: white;
+    opacity: 1;
+}
+
+.close:hover {
+    color: white;
+    opacity: 1;
+}
+
+/*POSITION PROPERTIES*/
+.absolute-pos {
+    position: absolute;
+}
+
+.relative-pos {
+    position: relative;
+}
+
+/*HEIGHT PROPERTIES*/
+.hf {
+    height: 100%;
+}
+
+.h2px {
+    height: 2px;
+}
+
+/*WIDTH PROPERTIES*/
+.wf {
+    width: 100%;
+}
+
+/*MARGIN PROPERTIES*/
+.nms {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.m2emh{
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.m5emh {
+    margin-right: 5em;
+    margin-left: 5em;
+}
+
+.m8emh {
+    margin-right: 8em;
+    margin-left: 8em;
+}
+
+.m10emh {
+    margin-right: 10em;
+    margin-left: 10em;
+}
+
+.m15emh {
+    margin-right: 15em;
+    margin-left: 15em;
+}
+
+/*PADDING PROPERTIES*/
+.nps {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.p1emh {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.p10pxb {
+    padding-bottom: 10px;
+}
